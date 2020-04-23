@@ -3295,9 +3295,14 @@ font: inherit;
 color: inherit;
 }
     @media only screen and (max-width: 479px){
+		 .chatheight{
+    height: auto!important;
+
+}
 .chattext {
 padding: 15px 15px;
 }
+
 .modal-box .modal-dialog2 .modal-content .modal-body {
 padding: 0 0 !important;
 height: 4300px;
