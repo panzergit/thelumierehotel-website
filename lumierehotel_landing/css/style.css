@@ -3295,9 +3295,14 @@ font: inherit;
 color: inherit;
 }
     @media only screen and (max-width: 479px){
+		 .chatheight{
+    height: auto!important;
+
+}
 .chattext {
 padding: 15px 15px;
 }
+
 .modal-box .modal-dialog2 .modal-content .modal-body {
 padding: 0 0 !important;
 height: 4300px;
@@ -3322,11 +3327,11 @@ display: inline-block; height: 4579px
 }
 .modal-box .modal-dialog2 {
 width: 90%;
-margin: 80px auto 10px;
+margin: 0px auto 10px;
 }
 .modal {
     position: fixed;
-    top: 0;
+    top: 80px;
     right: 0;
 bottom: 25px;}
 .modal-left-content img {
