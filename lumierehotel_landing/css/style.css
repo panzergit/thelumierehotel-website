@@ -2986,6 +2986,7 @@ font-size: 12px;
     font-weight: 400;
     line-height: 16px;
     font-family: 'Gotham book';
+	text-align: justify;
 }
 .closebt4 {
 margin-left: 10px;
@@ -3009,7 +3010,7 @@ width: 16px;
 }
 .modal-box .modal-dialog2 {
 width: 1000px;
-margin: 48px auto 10px;
+margin: 20px auto 10px;
 }
 .mailInfoMsg{ font-family: 'Gotham Book';
 letter-spacing: 2px;
@@ -3045,7 +3046,7 @@ transition: all 0.3s;
 }
 .modal-box .modal-dialog2 .modal-content .modal-body .modal-main-content {
 width: 60%;
-height: 592px;
+height: 627px;
 
 
 }
@@ -3077,7 +3078,7 @@ opacity: 1;
 }
 .modal-left-content img {
 width: 100%;
-height: 592px;
+height: 627px;
 object-fit: cover;
 }
 .modal-box .modal-dialog2 .modal-content .modal-body .modal-left-content {
@@ -3256,9 +3257,8 @@ background: #a5846a!important;
 color: #fff!important;
 }
 .btndef {
-margin-bottom: 20px!important;
-    margin-top: 10px;
-	border-radius: 2px;
+    margin-bottom: 2px!important;
+    border-radius: 6px;
 }
 .btn {
 display: inline-block;
