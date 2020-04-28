@@ -133,15 +133,16 @@
                                 <input type="text" autocomplete="off" name="name" required class="form-control yname" placeholder="your name here...">
                                <div class="input-group newslat newsev">
                                   <input type="email" autocomplete="off" name="email_address" required class="form-control" placeholder="your email here...">
-                                  <span class="input-group-btn">
-                                  <button class="btn btndef" type="submit">SUBMIT</button>
-                                  </span>
+                                  
                                </div>
                                <div class="gcap">
                                <div class="g-recaptcha root" data-theme="dark" data-sitekey="6LcfMuwUAAAAAPdd_5sKdH2nW0LS0gvR4INOxgvC"></div>
                             </div>
                                <span class="help-block sp-err roboterr" style="display:none;">Please verify that you are not a robot.</span>
-                               </form>
+                               <span class="input-group-btn">
+                                <button class="btn btndef" type="submit">SUBMIT</button>
+                                </span>   
+                            </form>
                                <h5>Lumiere uses the information above to contact you about our relevant content,products, and services.
                                   You may unsubscribe from these communications at any time.For more information, check out our privacy policy
                                </h5>
@@ -326,12 +327,13 @@ $(function ($) {
             $("#emailTag").text(emailAddress);
             $.ajax({
                 type : 'POST',
-                url  : "https://devapp.staylumiere.com/api/lumierehotel-save-email",
+                //url  : "https://devapp.staylumiere.com/api/lumierehotel-save-email",
+                url  : "http://lumiere.local/api/lumierehotel-save-email",
                 data : {email_address:emailAddress,name:$.trim($("input[name='name']").val())},
                 dataType : 'json',
                 success :  function(data) {
                     $(".btndef").prop("disabled",false);
-                    $("<span class='help-block sp-err'>"+data.message+"</span>").insertAfter("div.newslat");
+                    $("<span class='help-block sp-err'>"+data.message+"</span>").insertAfter("div.gcap");
                     if(data.status == 1){
                         $("input[name='email_address']").val('');
                         $("input[name='email_user']").val(data.user_id);
