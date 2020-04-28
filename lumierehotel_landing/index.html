@@ -327,8 +327,7 @@ $(function ($) {
             $("#emailTag").text(emailAddress);
             $.ajax({
                 type : 'POST',
-                //url  : "https://devapp.staylumiere.com/api/lumierehotel-save-email",
-                url  : "http://lumiere.local/api/lumierehotel-save-email",
+                url  : "https://devapp.staylumiere.com/api/lumierehotel-save-email",
                 data : {email_address:emailAddress,name:$.trim($("input[name='name']").val())},
                 dataType : 'json',
                 success :  function(data) {
